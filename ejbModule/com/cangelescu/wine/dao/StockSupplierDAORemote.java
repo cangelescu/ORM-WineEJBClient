@@ -2,7 +2,7 @@ package com.cangelescu.wine.dao;
 
 import javax.ejb.Remote;
 
-import com.cangelescuwine.dto.StockSupplierDTO;
+import com.cangelescu.wine.dto.StockSupplierDTO;
 
 @Remote
 public interface StockSupplierDAORemote extends GenericDAO<StockSupplierDTO>{

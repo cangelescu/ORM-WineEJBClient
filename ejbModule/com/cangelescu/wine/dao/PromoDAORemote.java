@@ -2,7 +2,7 @@ package com.cangelescu.wine.dao;
 
 import javax.ejb.Remote;
 
-import com.cangelescuwine.dto.PromoDTO;
+import com.cangelescu.wine.dto.PromoDTO;
 
 @Remote
 public interface PromoDAORemote extends GenericDAO<PromoDTO>{

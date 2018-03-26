@@ -1,4 +1,4 @@
-package com.cangelescuwine.dto;
+package com.cangelescu.wine.dto;
 
 import java.io.Serializable;
 import java.util.List;
