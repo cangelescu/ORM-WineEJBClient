@@ -6,61 +6,56 @@ import java.util.List;
 
 public class ClientB2CDTO extends UserDTO implements Serializable {
 
-	private static final long serialVersionUID = 1L;
-	private String lastName;
+	private static final long serialVersionUID = 6577901051368281055L;
+
 	private String firstName;
+
+	private String lastName;
+
 	private Date registerDate;
+
 	private String cnp;
 
-	private List<ClientOrderDTO> orders;
+	private List<OrderDTO> orders;
 
-	public ClientB2CDTO() {
-		super();
+	public String getFirstName() {
+		return firstName;
 	}
 
-	public List<ClientOrderDTO> getOrders() {
-		return orders;
-	}
-
-	public ClientB2CDTO setOrders(List<ClientOrderDTO> orders) {
-		this.orders = orders;
-		return this;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 
 	public String getLastName() {
 		return lastName;
 	}
 
-	public ClientB2CDTO setLastName(String lastName) {
+	public void setLastName(String lastName) {
 		this.lastName = lastName;
-		return this;
-	}
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public ClientB2CDTO setFirstName(String firstName) {
-		this.firstName = firstName;
-		return this;
 	}
 
 	public Date getRegisterDate() {
 		return registerDate;
 	}
 
-	public ClientB2CDTO setRegisterDate(Date registerDate) {
+	public void setRegisterDate(Date registerDate) {
 		this.registerDate = registerDate;
-		return this;
 	}
 
 	public String getCnp() {
 		return cnp;
 	}
 
-	public ClientB2CDTO setCnp(String cnp) {
+	public void setCnp(String cnp) {
 		this.cnp = cnp;
-		return this;
+	}
+
+	public List<OrderDTO> getOrders() {
+		return orders;
+	}
+
+	public void setOrders(List<OrderDTO> orders) {
+		this.orders = orders;
 	}
 
 }

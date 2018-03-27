@@ -1,65 +1,61 @@
 package com.cangelescu.wine.dto;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class PromoDTO implements Serializable {
 
-	private static final long serialVersionUID = 1L;
-	private int id;
+	private static final long serialVersionUID = 2443393944731236502L;
+
+	private Integer id;
+
+	private StockSupplierDTO stocksupplier;
+
 	private Date startDate;
+
 	private Date endDate;
-	private int discount;
 
-	private StockSupplierDTO stockSupplier;
+	private BigDecimal discount;
 
-	public PromoDTO() {
-		super();
-	}
-
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public PromoDTO setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
-		return this;
+	}
+
+	public StockSupplierDTO getStocksupplier() {
+		return stocksupplier;
+	}
+
+	public void setStocksupplier(StockSupplierDTO stocksupplier) {
+		this.stocksupplier = stocksupplier;
 	}
 
 	public Date getStartDate() {
 		return startDate;
 	}
 
-	public PromoDTO setStartDate(Date startDate) {
+	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
-		return this;
 	}
 
 	public Date getEndDate() {
 		return endDate;
 	}
 
-	public PromoDTO setEndDate(Date endDate) {
+	public void setEndDate(Date endDate) {
 		this.endDate = endDate;
-		return this;
 	}
 
-	public int getDiscount() {
+	public BigDecimal getDiscount() {
 		return discount;
 	}
 
-	public PromoDTO setDiscount(int discount) {
+	public void setDiscount(BigDecimal discount) {
 		this.discount = discount;
-		return this;
-	}
-
-	public StockSupplierDTO getStockSupplier() {
-		return stockSupplier;
-	}
-
-	public PromoDTO setStockSupplier(StockSupplierDTO stockSupplier) {
-		this.stockSupplier = stockSupplier;
-		return this;
 	}
 
 }

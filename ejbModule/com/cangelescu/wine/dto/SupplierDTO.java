@@ -5,51 +5,55 @@ import java.util.List;
 
 public class SupplierDTO extends UserDTO implements Serializable {
 
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = -4743229528680746618L;
+
+	private Integer id;
+
 	private boolean visibility;
-	private boolean wineCellarName;
+
+	private String cellarName;
+
 	private int age;
 
-	private List<StockSupplierDTO> stocks;
+	private List<StockSupplierDTO> stockSupplier;
 
-	public SupplierDTO() {
-		super();
+	public Integer getId() {
+		return id;
 	}
 
-	public List<StockSupplierDTO> getStocks() {
-		return stocks;
-	}
-
-	public SupplierDTO setStocks(List<StockSupplierDTO> stocks) {
-		this.stocks = stocks;
-		return this;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public boolean isVisibility() {
 		return visibility;
 	}
 
-	public SupplierDTO setVisibility(boolean visibility) {
+	public void setVisibility(boolean visibility) {
 		this.visibility = visibility;
-		return this;
 	}
 
-	public boolean isWineCellarName() {
-		return wineCellarName;
+	public String getCellarName() {
+		return cellarName;
 	}
 
-	public SupplierDTO setWineCellarName(boolean wineCellarName) {
-		this.wineCellarName = wineCellarName;
-		return this;
+	public void setCellarName(String cellarName) {
+		this.cellarName = cellarName;
 	}
 
 	public int getAge() {
 		return age;
 	}
 
-	public SupplierDTO setAge(int age) {
+	public void setAge(int age) {
 		this.age = age;
-		return this;
 	}
 
+	public List<StockSupplierDTO> getStockSupplier() {
+		return stockSupplier;
+	}
+
+	public void setStockSupplier(List<StockSupplierDTO> stockSupplier) {
+		this.stockSupplier = stockSupplier;
+	}
 }
